@@ -1,17 +1,99 @@
 import sys
 import os
+import re
 
+#what should we do if we get an empty file? create an empty answer file?
 
 def parse_args(argv):
-    if (len(argv) != 5):
-        print('There should be exactly 5 arguments')
+    if (len(argv) == 0):
+        print "No arguments accepted"
+        return
+    elif (argv[0] not in ["UNION","SEPERATE","DISTINCT","LIKE"]):
+        print "unknown command"
+        return
+    elif (len(argv) != 5 and argv[0] in ["UNION","SEPERATE", "DISTINCT"]):
+        print "number of parameters for command is wrong, should be 4"
+        return
+    elif (len(argv) not in [5,6] and argv[0] == "LIKE"):
+        print('number of parameters for command is wrong, should be 5 or 6')
         return
     else:
         if (argv[1] == "UNION"):
             union(argv[2], argv[3], argv[4])
-        else:
-            if (argv[1] == "SEPERATE"):
+        elif(argv[1] == "SEPERATE"):
                 seperate(argv[2], argv[3], argv[4])
+        elif (argv[1] == "DISTINCT"):
+            distinct(argv[2],argv[3],argv[4])
+        else:
+            output_path = "/"
+            if(len(argv) == 6): output_path = argv[5]
+            like(argv[2],argv[3],argv[4],output_path)
+
+
+
+def input_and_index_validation(input_path, index):
+    if (not os.path.exists(input_path)):
+        print 'Input file not found'
+        return None
+
+    input_file_name, input_file_extension = get_file_name_and_extension(input_path)
+
+    if (input_file_extension not in ['.txt', '.csv']):
+        print 'Error! Illegal file extension'
+        return None
+    if (is_file_structure_consistent(input_path) == -1):
+        print 'Error! File structure is not consistent'
+        return None
+
+    input_file = read_file_by_lines(input_path)
+
+    if (len(input_file) == 0):
+        return None
+
+    num_of_attributes = len(input_file[0].split("::"))
+
+    if (index < 0 or index >= num_of_attributes):
+        print 'Error! Column does not exist in table'
+        return None
+
+    return [input_file_name, input_file_extension]
+
+
+def like(input_path, index, parameter, output_path):
+    input_vars = input_and_index_validation(input_path,index)
+
+    if input_vars is None:
+        return
+    else:
+        input_file, input_file_extension = input_vars[0],input_vars[1]
+
+    try:
+        pattern = re.compile(parameter)
+    except re.error:
+        print 'Error! Invalid regular expression'
+        return
+
+    answer = [x for x in input_file if pattern.search(x[index]) is not None]
+    write_file_replace_if_exists(output_path + input_file_extension, answer)
+
+
+def distinct(input_path, column_index, output_path):
+    input_vars = input_and_index_validation(input_path, column_index)
+
+    if input_vars is None:
+        return
+    else:
+        input_file, input_file_extension = input_vars[0], input_vars[1]
+
+    required_column = [x[column_index] for x in input_file]
+
+    if (is_int(required_column[0]) or is_str(required_column[0])):
+        sorted_set = sorted(set(required_column))
+    else:
+        unsorted_set = set(required_column)
+        sorted_set = sorted(unsorted_set, key=required_column.index)
+
+    write_file_replace_if_exists(output_path + input_file_extension, sorted_set)
 
 
 def union(input1_path, input2_path, output_path):
@@ -56,7 +138,7 @@ def union(input1_path, input2_path, output_path):
     else:
         if (file1_first_line != None and file2_first_line != None):
             for att1, att2 in zip(file1_first_line, file2_first_line):
-                if ((is_int(att1) and not (is_int(att2))) or (is_int(att2) and not (is_int(att1)))):
+                if ((is_int(att1) and not (is_int(att2))) or (is_int(att2) and not (is_int(att1)))): # can we except the types to be only int or string?
                     print('Files structure is not consistent, different types')
                     return
                 if ((is_str(att1) and not (is_str(att2))) or (is_str(att2) and not (is_str(att1)))):
@@ -125,7 +207,7 @@ def read_file_by_lines(file_path):
     with open(file_path) as f:
         lines = f.read().splitlines()
 
-    lines = [line.strip() for line in lines]
+    lines = [line.strip() for line in lines if line is not None and line != ""]
     return lines
 
 
@@ -147,11 +229,8 @@ def is_str(s):
 
 
 def is_file_structure_consistent(file_path):
-    num_of_atts = 0
-    prev_line = None
     with open(file_path) as fp:
         line = fp.readline()
-        num_of_atts = len(line.split("::"))
         while line:
             prev_line = line
             line = fp.readline()
@@ -167,10 +246,9 @@ def is_file_structure_consistent(file_path):
                         return -1
 
 
-def write_file_replace_if_exists(file_path, file_content):
+def write_file_replace_if_exists(file_path, file_content): #ata king
     if os.path.isfile(file_path):
         os.remove(file_path)
-    output_file_name, output_extension = get_file_name_and_extension(file_path)
     output_file = open(file_path, "a")
     for line in file_content:
         output_file.write(line + '\n')
