@@ -136,7 +136,6 @@ def is_int(s):
     except ValueError:
         return False
 
-    # parse_args((sys.argv))
 
 
 def is_str(s):
@@ -166,9 +165,6 @@ def is_file_structure_consistent(file_path):
                     if ((is_int(att1) and not (is_int(att2))) or (is_int(att2) and not (is_int(att1)))):
                         print(file_path + ' structure is not consistent, different types')
                         return -1
-
-    # union('file1.txt', 'file2.txt', 'out')
-    # read_file_by_lines('items.txt')
 
 
 def write_file_replace_if_exists(file_path, file_content):
