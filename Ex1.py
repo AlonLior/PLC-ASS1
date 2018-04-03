@@ -27,7 +27,7 @@ def union(input1_path, input2_path, output_path):
     if (file1_extension != file2_extension):
         print('files extensions should be the same')
         return
-    
+
 
 
 def get_file_extension(file_path):
