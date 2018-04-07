@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="452e6759-b2b8-4496-a37a-9224a59dc46b" name="Default" comment="added distinct and like operators.&#10;&#10;a little bit of refactoring. &#10;&#10;added tests and the example files">
-      <change beforePath="" afterPath="$PROJECT_DIR$/files/items (2).txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/files/items.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/files/itemsMerged.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/files/ratings (2).txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/files/ratings.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/files/users (2).txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/files/users.txt" />
-      <change beforePath="$PROJECT_DIR$/.idea/PLC-ASS1.iml" afterPath="$PROJECT_DIR$/.idea/PLC-ASS1.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Ex1.py" afterPath="$PROJECT_DIR$/Ex1.py" />
+    <list default="true" id="452e6759-b2b8-4496-a37a-9224a59dc46b" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/files/bad_structure.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/bad_structure_2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/bad_structure_3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/emptyfile.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/emptyfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/files/noending" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ex1.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Ex1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ex1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ex1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="95" column="17" lean-forward="true" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+            <state relative-caret-position="187">
+              <caret line="116" column="108" selection-start-line="116" selection-start-column="108" selection-end-line="116" selection-end-column="108" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -39,12 +37,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ratings.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/files/ratings.txt">
+      <file leaf-file-name="bad_structure.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/files/bad_structure.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512295">
-              <caret line="24395" column="0" lean-forward="false" selection-start-line="24395" selection-start-column="0" selection-end-line="24395" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="153">
+              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="190" column="18" selection-start-line="190" selection-start-column="18" selection-end-line="190" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -64,6 +73,7 @@
       <find>Files structure is not consistent, different types</find>
       <find>is_file_structure_consistent</find>
       <find>int(</find>
+      <find>input file does not exist</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -73,6 +83,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assignment_1.py" />
+        <option value="$PROJECT_DIR$/files/bad_structure_3.txt" />
+        <option value="$PROJECT_DIR$/files/bad_structure_2.txt" />
+        <option value="$PROJECT_DIR$/files/bad_structure.txt" />
         <option value="$PROJECT_DIR$/Ex1.py" />
         <option value="$PROJECT_DIR$/tests.py" />
       </list>
@@ -85,24 +98,14 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="382" />
-    <option name="y" value="63" />
+    <option name="x" value="381" />
+    <option name="y" value="62" />
     <option name="width" value="1750" />
-    <option name="height" value="968" />
+    <option name="height" value="969" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -113,12 +116,16 @@
               <item name="PLC-ASS1" type="b2602c69:ProjectViewProjectNode" />
               <item name="PLC-ASS1" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="PLC-ASS1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PLC-ASS1" type="462c0819:PsiDirectoryNode" />
+              <item name="files" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -143,73 +150,87 @@
     </option>
   </component>
   <component name="RunManager" selected="Python tests.Unittests in tests.py">
-    <configuration name="Assignment_1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for tests.MyTestCase.test_union_1_empty_2_null" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PLC-ASS1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PLC-ASS1" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\kdavi\PycharmProjects\PLC-ASS1\Ex1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.MyTestCase.test_union_1_empty_2_null&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Ex1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Unittests for tests.MyTestCase.test_union_bad_structure_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PLC-ASS1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.MyTestCase.test_union_bad_structure_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for tests.MyTestCase.test_union_bad_structure_2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PLC-ASS1" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ex1.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.MyTestCase.test_union_bad_structure_2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for tests.MyTestCase.test_union_bad_structure_3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PLC-ASS1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.MyTestCase.test_union_bad_structure_3&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="Unittests in tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PLC-ASS1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PLC-ASS1" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;$PROJECT_DIR$/tests.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.Assignment_1" />
-      <item index="1" class="java.lang.String" itemvalue="Python.Ex1" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in tests.py" />
+    <list>
+      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_bad_structure_1" />
+      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_bad_structure_2" />
+      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_bad_structure_3" />
+      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_1_empty_2_null" />
+      <item itemvalue="Python tests.Unittests in tests.py" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in tests.py" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Ex1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Assignment_1" />
+      <list>
+        <item itemvalue="Python tests.Unittests in tests.py" />
+        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_1_empty_2_null" />
+        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_bad_structure_3" />
+        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_bad_structure_2" />
+        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_bad_structure_1" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -236,11 +257,45 @@
       <option name="project" value="LOCAL" />
       <updated>1522744454659</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added distinct and like operators.&#10;&#10;a little bit of refactoring. &#10;&#10;added the example files">
+      <created>1522781744209</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1522781744209</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_tests_py - 2018.04.03 at 21h 52m 49s.xml">
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_bad_output - 2018.04.07 at 14h 35m 48s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_bad_output" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_bad_structure_1 - 2018.04.07 at 14h 47m 53s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_bad_structure_1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_bad_structure_1 - 2018.04.07 at 14h 49m 35s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_bad_structure_1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_bad_structure_2 - 2018.04.07 at 14h 50m 11s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_bad_structure_2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_bad_structure_2 - 2018.04.07 at 14h 50m 40s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_bad_structure_2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_bad_structure_2 - 2018.04.07 at 14h 50m 52s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_bad_structure_2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_bad_structure_3 - 2018.04.07 at 14h 50m 53s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_bad_structure_3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_1_empty_2_null - 2018.04.07 at 14h 51m 13s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_1_empty_2_null" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_1_empty_2_null - 2018.04.07 at 14h 51m 31s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_1_empty_2_null" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2018.04.07 at 14h 51m 44s.xml">
       <configuration name="Unittests in tests.py" configurationId="tests" />
     </history-entry>
   </component>
@@ -254,30 +309,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22502685" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27936146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35180056" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16644295" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3295325" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3903134" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32905984" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32905984" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Mongo Explorer" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32905984" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35042736" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,10 +344,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Commit -- Davidoz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit -- Davidoz" />
+    <MESSAGE value="added distinct and like operators.&#10;&#10;a little bit of refactoring. &#10;&#10;added the example files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added distinct and like operators.&#10;&#10;a little bit of refactoring. &#10;&#10;added the example files" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Ex1.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -299,15 +363,31 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="29" />
+      <option name="time" value="51" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Ex1.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="95" column="17" lean-forward="true" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/ratings.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414715">
+          <caret line="24395" selection-start-line="24395" selection-end-line="24395" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex1.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
-          <caret line="85" column="65" lean-forward="false" selection-start-line="85" selection-start-column="65" selection-end-line="85" selection-end-column="65" />
+          <caret line="85" column="65" selection-start-line="85" selection-start-column="65" selection-end-line="85" selection-end-column="65" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -317,23 +397,14 @@
     <entry file="file://$PROJECT_DIR$/files/ratings.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="512295">
-          <caret line="24395" column="0" lean-forward="false" selection-start-line="24395" selection-start-column="0" selection-end-line="24395" selection-end-column="0" />
-          <folding />
+          <caret line="24395" selection-start-line="24395" selection-end-line="24395" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="31" lean-forward="true" selection-start-line="2" selection-start-column="31" selection-end-line="2" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests.py" />
     <entry file="file://$PROJECT_DIR$/Ex1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state>
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
@@ -341,28 +412,107 @@
       </provider>
     </entry>
     <entry file="file://D:/Python27/Lib/genericpath.py" />
-    <entry file="file://$PROJECT_DIR$/files/ratings.txt">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/teamcity/unittestpy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512295">
-          <caret line="24395" column="0" lean-forward="false" selection-start-line="24395" selection-start-column="0" selection-end-line="24395" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="1078">
+          <caret line="259" column="23" lean-forward="true" selection-start-line="259" selection-start-column="23" selection-end-line="259" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests.py">
+    <entry file="file://$USER_HOME$/Anaconda2/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="23" lean-forward="true" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="118">
+          <caret line="328" selection-start-line="328" selection-end-line="328" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/items (2).txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/emptyfile.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/noending">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/emptyfile.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bla">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bla.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10783" column="52" selection-start-line="10783" selection-start-column="52" selection-end-line="10783" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/users.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="5326" column="23" selection-start-line="5326" selection-start-column="6" selection-end-line="5326" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/users (2).txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92837">
+          <caret line="5461" column="48" selection-start-line="5461" selection-start-column="48" selection-end-line="5461" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/ratings.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414715">
+          <caret line="24395" selection-start-line="24395" selection-end-line="24395" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/items.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="42" lean-forward="true" selection-end-line="7495" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/bad_structure_3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-110983">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/bad_structure_2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="7487" selection-start-line="7487" selection-end-line="7487" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ex1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="95" column="17" lean-forward="true" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+        <state relative-caret-position="187">
+          <caret line="116" column="108" selection-start-line="116" selection-start-column="108" selection-end-line="116" selection-end-column="108" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/files/bad_structure.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="190" column="18" selection-start-line="190" selection-start-column="18" selection-end-line="190" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

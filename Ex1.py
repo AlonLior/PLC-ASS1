@@ -5,16 +5,16 @@ import re
 #what should we do if we get an empty file? create an empty answer file?
 
 def parse_args(argv):
-    if (len(argv) == 0):
+    if (len(argv) in [0,1]):
         print "No arguments accepted"
         return
-    elif (argv[0] not in ["UNION","SEPERATE","DISTINCT","LIKE"]):
+    elif (argv[1] not in ["UNION","SEPERATE","DISTINCT","LIKE"]):
         print "unknown command"
         return
-    elif (len(argv) != 5 and argv[0] in ["UNION","SEPERATE", "DISTINCT"]):
-        print "number of parameters for command is wrong, should be 4"
+    elif (len(argv) != 5 and argv[1] in ["UNION","SEPERATE", "DISTINCT"]):
+        print "number of parameters for command is wrong, should be 5"
         return
-    elif (len(argv) not in [5,6] and argv[0] == "LIKE"):
+    elif (len(argv) not in [5,6] and argv[1] == "LIKE"):
         print('number of parameters for command is wrong, should be 5 or 6')
         return
     else:
@@ -25,7 +25,7 @@ def parse_args(argv):
         elif (argv[1] == "DISTINCT"):
             distinct(argv[2],argv[3],argv[4])
         else:
-            output_path = "/"
+            output_path = "output.txt"
             if(len(argv) == 6): output_path = argv[5]
             like(argv[2],argv[3],argv[4],output_path)
 
@@ -97,17 +97,17 @@ def distinct(input_path, column_index, output_path):
 
 
 def union(input1_path, input2_path, output_path):
-    if (not (os.path.exists(input1_path)) or not (os.path.exists(input1_path))):
+    if (not (os.path.exists(input1_path)) or not (os.path.exists(input2_path))):
         print('file 1 or file 2 does not exist')
         return
 
     file1_name, file1_extension = get_file_name_and_extension(input1_path)
     file2_name, file2_extension = get_file_name_and_extension(input2_path)
 
-    if (file1_extension != '.txt' and file1_extension != '.csv'):
+    if (file1_extension not in ['.txt','.csv']):
         print('input files in the wrong formats')
         return
-    if (file2_extension != '.txt' and file2_extension != '.csv'):
+    if (file2_extension not in ['.txt','.csv']):
         print('input files in the wrong formats')
         return
     if (file1_extension != file2_extension):
@@ -132,8 +132,8 @@ def union(input1_path, input2_path, output_path):
         file2_first_line = file2[0].split("::")
         file2_num_of_att = len(file2_first_line)
 
-    if (file1_num_of_att != file2_num_of_att and (file1_first_line != None and file2_first_line != None)):
-        print('Files structure is not consistent, number of attributes is different')
+    if (file1_num_of_att != file2_num_of_att or (file1_first_line == None or file2_first_line == None)):
+        print('Error! The table\'s format does not match')
         return
     else:
         if (file1_first_line != None and file2_first_line != None):
@@ -148,18 +148,12 @@ def union(input1_path, input2_path, output_path):
     file1_after_append = [line + '::' + file1_name for line in file1]
     file2_after_append = [line + '::' + file2_name for line in file2]
     whole_file_after_append = file1_after_append + file2_after_append
-    if os.path.isfile(output_path + file1_extension):
-        os.remove(output_path + file1_extension)
-    output_file_name, output_extension = get_file_name_and_extension(output_path)
-    output_file = open(output_file_name + file1_extension, "a")
-    for line in whole_file_after_append:
-        output_file.write(line + '\n')
-    output_file.close()
+    write_file_replace_if_exists(output_path,whole_file_after_append)
 
 
 def seperate(input_path, output_path1, output_path2):
     if (not (os.path.exists(input_path))):
-        print('input file does not exist')
+        print('Input file not found')
         return
     input_file_name, input_file_extension = get_file_name_and_extension(input_path)
 
@@ -256,4 +250,4 @@ def write_file_replace_if_exists(file_path, file_content): #ata king
 
 # seperate('out.txt', 'file1_1', 'file2_1')
 # is_file_structure_consistent('out.txt')
-parse_args((sys.argv))
+#parse_args((sys.argv))
