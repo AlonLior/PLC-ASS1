@@ -1,4 +1,4 @@
-0::Bowling Skating Rinks 
+0::Bowling
 1::Recreation Centers Party & Event Planning 
 2::Gyms Trainers 
 3::Trainers Gyms 
@@ -43,7 +43,7 @@
 42::Gyms Sports Clubs Skating Rinks 
 43::Zoos Parks 
 44::Churches Leisure Centers 
-45::Hotels Golf 
+45::Hotels Golf
 46::Bars Swimming Pools 
 47::Bikes Sports Wear Mountain Biking 
 48::Trainers Gyms Pilates 

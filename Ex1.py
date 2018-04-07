@@ -68,14 +68,18 @@ def like(input_path, index, parameter, output_path):
     else:
         input_file, input_file_extension = input_vars[0],input_vars[1]
 
+
     try:
         pattern = re.compile(parameter)
     except re.error:
         print 'Error! Invalid regular expression'
         return
 
-    answer = [x for x in input_file if pattern.search(x[index]) is not None]
-    write_file_replace_if_exists(output_path + input_file_extension, answer)
+    current_file = read_file_by_lines(input_path)
+    current_file = [x.split("::") for x in current_file]
+    answer = [x for x in current_file if pattern.search(x[index]) is not None]
+    ans = ['::'.join(x) for x in answer]
+    write_file_replace_if_exists(output_path, ans)
 
 
 def distinct(input_path, column_index, output_path):
@@ -85,8 +89,9 @@ def distinct(input_path, column_index, output_path):
         return
     else:
         input_file, input_file_extension = input_vars[0], input_vars[1]
-
-    required_column = [x[column_index] for x in input_file]
+    file = read_file_by_lines(input_file+input_file_extension)
+    file = [x.split("::") for x in file]
+    required_column = [x[column_index] for x in file]
     is_iterable = False
     if required_column[0] in ['[]\n', '()\n', '{}\n', '[]', '()', '{}']: is_iterable = True
     else:
@@ -94,8 +99,9 @@ def distinct(input_path, column_index, output_path):
             x = eval(required_column[0])
             try:
                 iter(x)
+                is_iterable = True
             except TypeError:
-                is_iterable=True
+                pass
         except SyntaxError:
             pass
 
@@ -105,7 +111,7 @@ def distinct(input_path, column_index, output_path):
         unsorted_set = set(required_column)
         sorted_set = sorted(unsorted_set, key=required_column.index)
 
-    write_file_replace_if_exists(output_path + input_file_extension, sorted_set)
+    write_file_replace_if_exists(output_path, sorted_set)
 
 
 def union(input1_path, input2_path, output_path):
@@ -173,7 +179,7 @@ def get_first_line_attrbs(line):
         try:
             att1_as_code = eval(attr1)
             ans.append(type(att1_as_code))
-        except SyntaxError:
+        except (SyntaxError,NameError):
             ans.append(type(attr1))
 
     return ans
@@ -189,7 +195,7 @@ def check_both_lines_have_same_attr(line1, attrbs):
         try:
             att1_as_code = eval(att1)
             current_type = type(att1_as_code)
-        except SyntaxError:
+        except (SyntaxError,NameError):
             current_type = type(att1)
         if current_type != attrbs[index]:
             return -1
@@ -236,8 +242,8 @@ def seperate(input_path, output_path1, output_path2):
         prev_line = line
         prev_line_splitted = prev_line.split("::")
 
-    write_file_replace_if_exists(output_path1 + input_file_extension, file_1_lines)
-    write_file_replace_if_exists(output_path2 + input_file_extension, file_2_lines)
+    write_file_replace_if_exists(output_path1, file_1_lines)
+    write_file_replace_if_exists(output_path2, file_2_lines)
 
 
 def get_file_name_and_extension(file_path):
@@ -266,6 +272,9 @@ def is_file_structure_consistent(file, file_path):
 
 
 def write_file_replace_if_exists(file_path, file_content): #ata king
+    if file_path is None or file_path=="":
+        print 'invalid output path'
+        return
     if os.path.isfile(file_path):
         os.remove(file_path)
     output_file = open(file_path, "a")
