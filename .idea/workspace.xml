@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="452e6759-b2b8-4496-a37a-9224a59dc46b" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/files/extrafiles/intfile2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/extrafiles/iterativefile1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/extrafiles/iterativefile2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/extrafiles/noending" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/extrafiles/strfile1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/files/extrafiles/strfile2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ex1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/bad_structure.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/extrafiles/bad_structure.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/bad_structure_2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/extrafiles/bad_structure_2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/bad_structure_3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/extrafiles/bad_structure_3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/emptyfile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/files/extrafiles/emptyfile.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/emptyfile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/extrafiles/emptyfile.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/noending" beforeDir="false" afterPath="$PROJECT_DIR$/files/extrafiles/intfile1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -31,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Ex1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Ex1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ex1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="127" selection-start-line="127" selection-end-line="127" />
+            <state relative-caret-position="193">
+              <caret line="174" column="42" lean-forward="true" selection-start-line="174" selection-start-column="42" selection-end-line="174" selection-end-column="42" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -43,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="240" column="13" selection-start-line="240" selection-start-column="13" selection-end-line="240" selection-end-column="13" />
+            <state relative-caret-position="-96">
+              <caret line="222" column="31" selection-start-line="222" selection-start-column="31" selection-end-line="222" selection-end-column="31" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -72,6 +59,9 @@
       <find>int(</find>
       <find>input file does not exist</find>
       <find>error!</find>
+      <find>readli</find>
+      <find>read</find>
+      <find>check</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -90,8 +80,8 @@
         <option value="$PROJECT_DIR$/files/extrafiles/intfile2.txt" />
         <option value="$PROJECT_DIR$/files/extrafiles/iterativefile2.txt" />
         <option value="$PROJECT_DIR$/files/extrafiles/iterativefile1.txt" />
-        <option value="$PROJECT_DIR$/Ex1.py" />
         <option value="$PROJECT_DIR$/tests.py" />
+        <option value="$PROJECT_DIR$/Ex1.py" />
       </list>
     </option>
   </component>
@@ -160,7 +150,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for tests.MyTestCase.test_union_3">
+  <component name="RunManager" selected="Python tests.Unittests in tests.py">
     <configuration name="Unittests for tests.MyTestCase.test_union" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PLC-ASS1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -200,7 +190,7 @@
       <option name="_new_target" value="&quot;tests.MyTestCase.test_union_3&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for tests.MyTestCase.test_union_diffrent_types_int_iter" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for tests.MyTestCase.test_union_bad_structure_3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PLC-ASS1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -210,7 +200,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.MyTestCase.test_union_diffrent_types_int_iter&quot;" />
+      <option name="_new_target" value="&quot;tests.MyTestCase.test_union_bad_structure_3&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="Unittests in tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -228,18 +218,18 @@
     </configuration>
     <list>
       <item itemvalue="Python tests.Unittests in tests.py" />
-      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_diffrent_types_int_iter" />
       <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_2" />
       <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_3" />
       <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union" />
+      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_bad_structure_3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in tests.py" />
+        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_bad_structure_3" />
         <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_3" />
         <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_2" />
         <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union" />
-        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_diffrent_types_int_iter" />
-        <item itemvalue="Python tests.Unittests in tests.py" />
       </list>
     </recent_temporary>
   </component>
@@ -282,22 +272,17 @@
       <option name="project" value="LOCAL" />
       <updated>1523102053717</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed iterable methodes">
+      <created>1523111695029</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1523111695029</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_tests_MyTestCase_test_union_diffrent_types_str_iter - 2018.04.07 at 16h 38m 02s.xml">
-      <configuration name="Unittests for tests.MyTestCase.test_union_diffrent_types_str_iter" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_tests_py - 2018.04.07 at 16h 38m 28s.xml">
-      <configuration name="Unittests in tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_tests_py - 2018.04.07 at 16h 39m 04s.xml">
-      <configuration name="Unittests in tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_tests_MyTestCase_test_union_diffrent_types_int_iter - 2018.04.07 at 17h 31m 19s.xml">
-      <configuration name="Unittests for tests.MyTestCase.test_union_diffrent_types_int_iter" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_tests_MyTestCase_test_union_2 - 2018.04.07 at 17h 32m 28s.xml">
       <configuration name="Unittests for tests.MyTestCase.test_union_2" configurationId="tests" />
     </history-entry>
@@ -316,6 +301,18 @@
     <history-entry file="Unittests_for_tests_MyTestCase_test_union_3 - 2018.04.07 at 17h 33m 24s.xml">
       <configuration name="Unittests for tests.MyTestCase.test_union_3" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2018.04.07 at 18h 05m 18s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_bad_structure_3 - 2018.04.07 at 18h 06m 02s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_bad_structure_3" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2018.04.07 at 18h 07m 21s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2018.04.07 at 18h 08m 54s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -333,7 +330,7 @@
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16577181" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295325" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3903134" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3903134" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32905984" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32905984" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -364,7 +361,8 @@
     <MESSAGE value="Initial Commit -- Davidoz" />
     <MESSAGE value="added distinct and like operators.&#10;&#10;a little bit of refactoring. &#10;&#10;added the example files" />
     <MESSAGE value="tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests" />
+    <MESSAGE value="fixed iterable methodes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed iterable methodes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -382,7 +380,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="64" />
+      <option name="time" value="65" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -558,16 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ex1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bla.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="117">
@@ -589,10 +577,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="240" column="13" selection-start-line="240" selection-start-column="13" selection-end-line="240" selection-end-column="13" />
+        <state relative-caret-position="-96">
+          <caret line="222" column="31" selection-start-line="222" selection-start-column="31" selection-end-line="222" selection-end-column="31" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Ex1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="174" column="42" lean-forward="true" selection-start-line="174" selection-start-column="42" selection-end-line="174" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -41,13 +41,14 @@ def input_and_index_validation(input_path, index):
     if (input_file_extension not in ['.txt', '.csv']):
         print 'Error! Illegal file extension'
         return None
-    if (is_file_structure_consistent(input_path) == -1):
-        print 'Error! File structure is not consistent'
-        return None
 
     input_file = read_file_by_lines(input_path)
 
     if (len(input_file) == 0):
+        return None
+
+    if (is_file_structure_consistent(input_file, input_path) == -1):
+        print 'Error! File structure is not consistent'
         return None
 
     num_of_attributes = len(input_file[0].split("::"))
@@ -125,15 +126,17 @@ def union(input1_path, input2_path, output_path):
         print('files extensions should be the same')
         return
 
-    if (is_file_structure_consistent(input1_path) == -1):
+    file1 = read_file_by_lines(input1_path)
+    file2 = read_file_by_lines(input2_path)
+
+    if (is_file_structure_consistent(file1, input1_path) == -1):
         print(input1_path + 'structure is not consistent, different number of attributes')
         return
-    if (is_file_structure_consistent(input2_path) == -1):
+    if (is_file_structure_consistent(file2, input2_path) == -1):
         print(input2_path + 'structure is not consistent, different number of attributes')
         return
 
-    file1 = read_file_by_lines(input1_path)
-    file2 = read_file_by_lines(input2_path)
+
     file1_num_of_att = 0
     file2_num_of_att = 0
     file2_first_line = None
@@ -150,48 +153,50 @@ def union(input1_path, input2_path, output_path):
     if (file1_num_of_att != file2_num_of_att or (file1_first_line == None or file2_first_line == None)):
         print('Error! The table\'s format does not match')
         return
-    elif check_both_lines_have_same_attr(file1_first_line,file2_first_line) == -1:
-        print('Error! The table\'s format does not match')
-        return
 
+    else:
+        attrbs = get_first_line_attrbs(file1_first_line)
+        if check_both_lines_have_same_attr(file2_first_line,attrbs) == -1:
+            print('Error! The table\'s format does not match')
+            return
     file1_after_append = [line + '::' + file1_name for line in file1]
     file2_after_append = [line + '::' + file2_name for line in file2]
     whole_file_after_append = file1_after_append + file2_after_append
     write_file_replace_if_exists(output_path,whole_file_after_append)
 
+def get_first_line_attrbs(line):
+    ans = []
+    for attr1_raw in line:
+        attr1 = attr1_raw
+        if attr1 in ['[]\n','()\n','{}\n','[]','()','{}']:
+            attr1 = attr1[0] + '1, ' + attr1[1]
+        try:
+            att1_as_code = eval(attr1)
+            ans.append(type(att1_as_code))
+        except SyntaxError:
+            ans.append(type(attr1))
 
-def check_both_lines_have_same_attr(line1,line2):
-    for att1_raw, att2_raw in zip(line1, line2):
+    return ans
+
+
+def check_both_lines_have_same_attr(line1, attrbs):
+    if len(line1) != len(attrbs): return -1
+    index = 0
+    for att1_raw in line1:
         att1 = att1_raw
-        att2 =att2_raw
-        one_is_empty_itr = att1 in ['[]\n','()\n','{}\n','[]','()','{}']
-        two_is_empty_itr = att2 in ['[]\n','()\n','{}\n','[]','()','{}']
-        if one_is_empty_itr or two_is_empty_itr:
-            if one_is_empty_itr and two_is_empty_itr: continue
-            if one_is_empty_itr:
-                att1 = att1[0] + '1,' + att1[1]
-            if two_is_empty_itr:
-                att2 = att2[0] + '1,' + att2[1]
-
-        one_is_str = False
-        two_is_str = False
+        if att1 in ['[]\n','()\n','{}\n','[]','()','{}']:
+            att1 = att1[0] + '1, ' + att1[1]
         try:
             att1_as_code = eval(att1)
+            current_type = type(att1_as_code)
         except SyntaxError:
-            one_is_str = True
-        try:
-            att2_as_code = eval(att2)
-        except SyntaxError:
-            two_is_str = True
-        if one_is_str or two_is_str:
-            if one_is_str == two_is_str:
-                continue
-            else:
-                return -1
-
-        if type(att1_as_code) is not type(att2_as_code):
+            current_type = type(att1)
+        if current_type != attrbs[index]:
             return -1
+        else:
+            index+=1
     return 0
+
 
 def seperate(input_path, output_path1, output_path2):
     if (not (os.path.exists(input_path))):
@@ -203,10 +208,11 @@ def seperate(input_path, output_path1, output_path2):
         print('input file is in the wrong formats')
         return
 
-    if (is_file_structure_consistent(input_path) == -1):
+    file_by_lines = read_file_by_lines(input_path)
+
+    if (is_file_structure_consistent(file_by_lines, input_path) == -1):
         return
 
-    file_by_lines = read_file_by_lines(input_path)
     prev_line = None
     file_1_lines = []
     file_2_lines = []
@@ -247,39 +253,15 @@ def read_file_by_lines(file_path):
     return lines
 
 
-def is_int(s):
-    try:
-        int(s)
-        return True
-    except ValueError:
-        return False
+def is_file_structure_consistent(file, file_path):
+    if len(file) == 0: return 0
+    first_line_attrbs = get_first_line_attrbs(file[0].split("::"))
+    for x in file:
+        if check_both_lines_have_same_attr(x.split("::"), first_line_attrbs) == -1:
+            print(file_path + ' structure is not consistent, different number of attributes')
+            return -1
+    return 0
 
-
-
-def is_str(s):
-    try:
-        str(s)
-        return True
-    except ValueError:
-        return False
-
-
-def is_file_structure_consistent(file_path):
-    with open(file_path) as fp:
-        line = fp.readline()
-        while line:
-            prev_line = line
-            line = fp.readline()
-            if (line != None and line != ""):
-                line_splitted = line.split("::")
-                prev_line_splitted = prev_line.split("::")
-                if (len(line_splitted) != len(prev_line_splitted)):
-                    print(file_path + ' structure is not consistent, different number of attributes')
-                    return -1
-                if check_both_lines_have_same_attr(line_splitted, prev_line_splitted) == -1:
-                    print(file_path + ' structure is not consistent, different number of attributes')
-                    return -1
-        return 0
 
 
 
