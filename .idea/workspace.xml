@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="452e6759-b2b8-4496-a37a-9224a59dc46b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ex1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Ex1.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Ex1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Ex1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="164" column="14" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
+            <state relative-caret-position="177">
+              <caret line="284" column="38" lean-forward="true" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -31,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4124">
-              <caret line="154" column="81" selection-start-line="154" selection-start-column="81" selection-end-line="154" selection-end-column="81" />
+            <state relative-caret-position="704">
+              <caret line="369" column="35" lean-forward="true" selection-start-line="369" selection-start-column="35" selection-end-line="369" selection-end-column="35" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -293,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523121888028</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="final repaires">
+      <created>1523170701562</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1523170701562</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -378,7 +383,8 @@
     <MESSAGE value="fixed iterable methodes" />
     <MESSAGE value="re factored the check consistency method to drsticly improve run time" />
     <MESSAGE value="done! all tests pass" />
-    <option name="LAST_COMMIT_MESSAGE" value="done! all tests pass" />
+    <MESSAGE value="final repaires" />
+    <option name="LAST_COMMIT_MESSAGE" value="final repaires" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -644,22 +650,22 @@
         <state relative-caret-position="-1224" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Ex1.py">
+    <entry file="file://$PROJECT_DIR$/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="164" column="14" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
+        <state relative-caret-position="704">
+          <caret line="369" column="35" lean-forward="true" selection-start-line="369" selection-start-column="35" selection-end-line="369" selection-end-column="35" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests.py">
+    <entry file="file://$PROJECT_DIR$/Ex1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4124">
-          <caret line="154" column="81" selection-start-line="154" selection-start-column="81" selection-end-line="154" selection-end-column="81" />
+        <state relative-caret-position="177">
+          <caret line="284" column="38" lean-forward="true" selection-start-line="284" selection-start-column="38" selection-end-line="284" selection-end-column="38" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -287,4 +287,4 @@ def write_file_replace_if_exists(file_path, file_content): #ata king
 
 # seperate('out.txt', 'file1_1', 'file2_1')
 # is_file_structure_consistent('out.txt')
-#parse_args((sys.argv))
+parse_args((sys.argv))
