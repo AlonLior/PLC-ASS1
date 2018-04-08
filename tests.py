@@ -97,7 +97,7 @@ class MyTestCase(unittest.TestCase):
         parse_args(testargs)
         assert capturedOutput.buflist[0] == 'file 1 or file 2 does not exist'
 
-    def test_union_1_empty_2_null(self):
+    def test_union_1_empty_2_null_opp(self):
         testargs = ['Ex1', 'UNION', r'files\extrafiles\emptyfile.txt', r'blabla', 'bla']
         capturedOutput = StringIO()
         sys.stdout = capturedOutput
