@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="452e6759-b2b8-4496-a37a-9224a59dc46b" name="Default" comment="done! all tests">
-      <change afterPath="$PROJECT_DIR$/files/extrafiles/mergedwith3.txt" afterDir="false" />
+    <list default="true" id="452e6759-b2b8-4496-a37a-9224a59dc46b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Ex1.py" beforeDir="false" afterPath="$PROJECT_DIR$/Ex1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/extrafiles/intfile2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/extrafiles/intfile2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/extrafiles/iterativefile2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/extrafiles/iterativefile2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/extrafiles/strfile2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/extrafiles/strfile2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/items.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/items.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Ex1.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Ex1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Ex1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="274" column="41" selection-start-line="274" selection-start-column="41" selection-end-line="274" selection-end-column="41" />
+            <state relative-caret-position="221">
+              <caret line="164" column="14" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -36,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
+            <state relative-caret-position="-4124">
+              <caret line="154" column="81" selection-start-line="154" selection-start-column="81" selection-end-line="154" selection-end-column="81" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -60,16 +55,17 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
+      <find>Files structure is not consistent, different types</find>
       <find>is_file_structure_consistent</find>
       <find>int(</find>
-      <find />
+      <find>input file does not exist</find>
       <find>error!</find>
       <find>readli</find>
       <find>read</find>
       <find>check</find>
       <find>sepe</find>
       <find>sep</find>
+      <find>bla</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -155,32 +151,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python tests.Unittests in tests.py">
-    <configuration name="Unittests for tests.MyTestCase.test_Like_int" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="PLC-ASS1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.MyTestCase.test_Like_int&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
-    <configuration name="Unittests for tests.MyTestCase.test_Like_iter" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="PLC-ASS1" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.MyTestCase.test_Like_iter&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-    </configuration>
     <configuration name="Unittests for tests.MyTestCase.test_invalid_path_DISTINCT" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PLC-ASS1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -194,7 +164,7 @@
       <option name="_new_target" value="&quot;tests.MyTestCase.test_invalid_path_DISTINCT&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
-    <configuration name="Unittests for tests.MyTestCase.test_seperate_empty_output" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for tests.MyTestCase.test_union_1_both_1_ok" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="PLC-ASS1" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -204,7 +174,33 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.MyTestCase.test_seperate_empty_output&quot;" />
+      <option name="_new_target" value="&quot;tests.MyTestCase.test_union_1_both_1_ok&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for tests.MyTestCase.test_union_1_both_empty" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PLC-ASS1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.MyTestCase.test_union_1_both_empty&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+    </configuration>
+    <configuration name="Unittests for tests.MyTestCase.test_union_1_empty_1_ok" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="PLC-ASS1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.MyTestCase.test_union_1_empty_1_ok&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
     </configuration>
     <configuration name="Unittests in tests.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -221,19 +217,19 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_Like_int" />
-      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_Like_iter" />
       <item itemvalue="Python tests.Unittests in tests.py" />
-      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_seperate_empty_output" />
+      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_1_both_empty" />
+      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_1_both_1_ok" />
+      <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_1_empty_1_ok" />
       <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_invalid_path_DISTINCT" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Unittests in tests.py" />
-        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_Like_iter" />
         <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_invalid_path_DISTINCT" />
-        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_seperate_empty_output" />
-        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_Like_int" />
+        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_1_both_empty" />
+        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_1_empty_1_ok" />
+        <item itemvalue="Python tests.Unittests for tests.MyTestCase.test_union_1_both_1_ok" />
       </list>
     </recent_temporary>
   </component>
@@ -290,39 +286,46 @@
       <option name="project" value="LOCAL" />
       <updated>1523113789408</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="done! all tests pass">
+      <created>1523121888028</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1523121888028</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_tests_MyTestCase_test_Like_str - 2018.04.07 at 20h 15m 57s.xml">
-      <configuration name="Unittests for tests.MyTestCase.test_Like_str" configurationId="tests" />
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_1_empty_1_ok - 2018.04.08 at 09h 51m 27s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_1_empty_1_ok" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_tests_MyTestCase_test_Like_str - 2018.04.07 at 20h 17m 20s.xml">
-      <configuration name="Unittests for tests.MyTestCase.test_Like_str" configurationId="tests" />
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_1_empty_1_ok - 2018.04.08 at 09h 51m 50s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_1_empty_1_ok" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_tests_MyTestCase_test_Like_int - 2018.04.07 at 20h 18m 17s.xml">
-      <configuration name="Unittests for tests.MyTestCase.test_Like_int" configurationId="tests" />
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_1_empty_1_ok - 2018.04.08 at 09h 53m 03s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_1_empty_1_ok" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_tests_MyTestCase_test_Like_str - 2018.04.07 at 20h 18m 45s.xml">
-      <configuration name="Unittests for tests.MyTestCase.test_Like_str" configurationId="tests" />
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_1_empty_1_ok - 2018.04.08 at 09h 53m 17s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_1_empty_1_ok" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_tests_MyTestCase_test_Like_int - 2018.04.07 at 20h 18m 53s.xml">
-      <configuration name="Unittests for tests.MyTestCase.test_Like_int" configurationId="tests" />
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_1_empty_1_ok - 2018.04.08 at 09h 53m 42s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_1_empty_1_ok" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_tests_MyTestCase_test_Like_iter - 2018.04.07 at 20h 19m 54s.xml">
-      <configuration name="Unittests for tests.MyTestCase.test_Like_iter" configurationId="tests" />
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_1_empty_1_ok - 2018.04.08 at 09h 54m 24s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_1_empty_1_ok" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_in_tests_py - 2018.04.07 at 20h 20m 52s.xml">
+    <history-entry file="Unittests_for_tests_MyTestCase_test_union_1_both_empty - 2018.04.08 at 09h 54m 39s.xml">
+      <configuration name="Unittests for tests.MyTestCase.test_union_1_both_empty" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2018.04.08 at 09h 55m 04s.xml">
       <configuration name="Unittests in tests.py" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_tests_MyTestCase_test_seperate_empty_output - 2018.04.07 at 20h 22m 13s.xml">
-      <configuration name="Unittests for tests.MyTestCase.test_seperate_empty_output" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_tests_py - 2018.04.07 at 20h 22m 30s.xml">
-      <configuration name="Unittests in tests.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_tests_MyTestCase_test_invalid_path_DISTINCT - 2018.04.07 at 20h 22m 59s.xml">
+    <history-entry file="Unittests_for_tests_MyTestCase_test_invalid_path_DISTINCT - 2018.04.08 at 09h 55m 18s.xml">
       <configuration name="Unittests for tests.MyTestCase.test_invalid_path_DISTINCT" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_tests_py - 2018.04.08 at 09h 55m 59s.xml">
+      <configuration name="Unittests in tests.py" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -341,7 +344,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16577181" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3295325" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.22364673" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4131054" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32905984" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32905984" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -374,10 +377,18 @@
     <MESSAGE value="tests" />
     <MESSAGE value="fixed iterable methodes" />
     <MESSAGE value="re factored the check consistency method to drsticly improve run time" />
-    <option name="LAST_COMMIT_MESSAGE" value="re factored the check consistency method to drsticly improve run time" />
+    <MESSAGE value="done! all tests pass" />
+    <option name="LAST_COMMIT_MESSAGE" value="done! all tests pass" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Ex1.py</url>
+          <line>154</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -385,7 +396,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="88" />
+      <option name="time" value="93" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -448,9 +459,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/files/extrafiles/emptyfile.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bla">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/files/users (2).txt">
@@ -631,22 +639,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests.py">
+    <entry file="file://$PROJECT_DIR$/bla">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-1224" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Ex1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="274" column="41" selection-start-line="274" selection-start-column="41" selection-end-line="274" selection-end-column="41" />
+        <state relative-caret-position="221">
+          <caret line="164" column="14" selection-start-line="164" selection-start-column="14" selection-end-line="164" selection-end-column="14" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4124">
+          <caret line="154" column="81" selection-start-line="154" selection-start-column="81" selection-end-line="154" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
           </folding>
         </state>
       </provider>

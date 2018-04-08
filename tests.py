@@ -127,6 +127,18 @@ class MyTestCase(unittest.TestCase):
         parse_args(testargs)
         assert capturedOutput.buflist[0] == 'input files in the wrong formats'
 
+    def test_union_1_both_empty(self):
+        testargs = ['Ex1', 'UNION', r'files\extrafiles\emptyfile.txt', r'files\extrafiles\emptyfile.txt', 'bla']
+        capturedOutput = StringIO()
+        sys.stdout = capturedOutput
+        parse_args(testargs)
+        assert capturedOutput.buflist[0] == 'both tables are empty'
+
+    def test_union_1_empty_1_ok(self):
+        testargs = ['Ex1', 'UNION', r'files\extrafiles\emptyfile.txt', r'files\ratings.txt', 'bla']
+        capturedOutput = StringIO()
+        sys.stdout = capturedOutput
+        parse_args(testargs)
 
     def test_union_1_txt_2_csv(self):
         testargs = ['Ex1', 'UNION', r'files\extrafiles\emptyfile.txt', r'files\extrafiles\emptyfile.csv', 'bla']
@@ -141,22 +153,6 @@ class MyTestCase(unittest.TestCase):
         sys.stdout = capturedOutput
         parse_args(testargs)
         assert capturedOutput.buflist[0] == 'files extensions should be the same'
-
-
-    def test_union_1_empty_2_full(self):
-        testargs = ['Ex1', 'UNION', r'files\extrafiles\emptyfile.txt', r'files\items.txt', 'bla']
-        capturedOutput = StringIO()
-        sys.stdout = capturedOutput
-        parse_args(testargs)
-        assert capturedOutput.buflist[0] == 'Error! The table\'s format does not match'
-
-
-    def test_union_1_full_2_empty(self):
-        testargs = ['Ex1', 'UNION', r'files\items.txt', r'files\extrafiles\emptyfile.txt', 'bla']
-        capturedOutput = StringIO()
-        sys.stdout = capturedOutput
-        parse_args(testargs)
-        assert capturedOutput.buflist[0] == 'Error! The table\'s format does not match'
 
 
     def test_union_users_ratings(self):

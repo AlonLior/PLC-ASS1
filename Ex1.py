@@ -143,23 +143,26 @@ def union(input1_path, input2_path, output_path):
         return
 
 
-    file1_num_of_att = 0
-    file2_num_of_att = 0
     file2_first_line = None
     file1_first_line = None
 
     if (len(file1) != 0):
         file1_first_line = file1[0].split("::")
-        file1_num_of_att = len(file1_first_line)
 
     if (len(file2) != 0):
         file2_first_line = file2[0].split("::")
-        file2_num_of_att = len(file2_first_line)
 
-    if (file1_num_of_att != file2_num_of_att or (file1_first_line == None or file2_first_line == None)):
-        print('Error! The table\'s format does not match')
+    if (file1_first_line == None and file2_first_line==None):
+        print ('both tables are empty')
         return
 
+    if (file1_first_line == None):
+        write_file_replace_if_exists(output_path, file2)
+        return
+
+    if (file2_first_line == None):
+        write_file_replace_if_exists(output_path, file1)
+        return
     else:
         attrbs = get_first_line_attrbs(file1_first_line)
         if check_both_lines_have_same_attr(file2_first_line,attrbs) == -1:
