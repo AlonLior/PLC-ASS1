@@ -37,11 +37,11 @@ class MyTestCase(unittest.TestCase):
 
 
     def test_like_bad_num_of_args(self):
-        testargs = ['Ex1','LIKE', 'bla', 'bla']
+        testargs = ['Ex1','LIKE', 'bla',]
         capturedOutput = StringIO()
         sys.stdout = capturedOutput
         parse_args(testargs)
-        assert capturedOutput.buflist[0] == 'number of parameters for command is wrong, should be 5 or 6'
+        assert capturedOutput.buflist[0] == 'number of parameters for command is wrong, should be 4 or 5 or 6'
 
 
     def test_like_bad_num_of_args_to_much(self):
@@ -49,7 +49,7 @@ class MyTestCase(unittest.TestCase):
         capturedOutput = StringIO()
         sys.stdout = capturedOutput
         parse_args(testargs)
-        assert capturedOutput.buflist[0] == 'number of parameters for command is wrong, should be 5 or 6'
+        assert capturedOutput.buflist[0] == 'number of parameters for command is wrong, should be 4 or 5 or 6'
 
     ### END ###
 
@@ -408,6 +408,12 @@ class MyTestCase(unittest.TestCase):
 
     def test_Like_iter(self):
         testargs = ['Ex1', 'LIKE', r'files\users.txt', 1,'{55','outputitrlike.txt']
+        capturedOutput = StringIO()
+        sys.stdout = capturedOutput
+        parse_args(testargs)
+
+    def test_Like_defualt_values(self):
+        testargs = ['Ex1', 'LIKE', r'files\users.txt', 1]
         capturedOutput = StringIO()
         sys.stdout = capturedOutput
         parse_args(testargs)

@@ -14,8 +14,8 @@ def parse_args(argv):
     elif (len(argv) != 5 and argv[1] in ["UNION","SEPERATE", "DISTINCT"]):
         print "number of parameters for command is wrong, should be 5"
         return
-    elif (len(argv) not in [5,6] and argv[1] == "LIKE"):
-        print('number of parameters for command is wrong, should be 5 or 6')
+    elif (len(argv) not in [4,5,6] and argv[1] == "LIKE"):
+        print('number of parameters for command is wrong, should be 4 or 5 or 6')
         return
     else:
         if (argv[1] == "UNION"):
@@ -25,9 +25,14 @@ def parse_args(argv):
         elif (argv[1] == "DISTINCT"):
             distinct(argv[2],argv[3],argv[4])
         else:
+            reg = "*"
             output_path = "output.txt"
-            if(len(argv) == 6): output_path = argv[5]
-            like(argv[2],argv[3],argv[4],output_path)
+            if (len(argv) >4):
+                reg = argv[4]
+            if(len(argv) > 5):
+                output_path = argv[5]
+
+            like(argv[2],argv[3],reg,output_path)
 
 
 
@@ -66,9 +71,12 @@ def like(input_path, index, parameter, output_path):
     if input_vars is None:
         return
     else:
-        input_file, input_file_extension = input_vars[0],input_vars[1]
+        input_vars[0],input_vars[1]
 
-
+    if parameter == "*":
+        current_file = read_file_by_lines(input_path)
+        write_file_replace_if_exists(output_path, current_file)
+        return
     try:
         pattern = re.compile(parameter)
     except re.error:
